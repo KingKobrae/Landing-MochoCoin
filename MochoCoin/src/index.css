@@ -1,0 +1,17 @@
+:root {
+    --color-gradient-yellow: #F6CB1A ;
+    --color-gradient-cyan: #63A6F5;
+    --color-background-cyan: #3B82F6;
+    --color-background-blue: #1E293B;
+    --color-gradient-header: #1E41B1;
+    --color-background-header: #0F172A;
+    --blanco: #fff;
+    --blue-card: #03207F;
+    --blue-card-border: #404A59;
+    --blue-button-border: #14265C;
+    
+}
+
+* {
+    background-color: aquamarine;
+}
