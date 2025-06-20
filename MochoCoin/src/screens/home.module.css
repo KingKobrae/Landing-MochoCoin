@@ -1,0 +1,103 @@
+:root {
+    --background-img: linear-gradient(150deg,#1e293b7e 8%, #3b83f6bb 83%), url(./src/assets/Mocho_background.png) no-repeat;
+    --title-color: linear-gradient(90deg,#63a6f5 15%, #f6cb1a 60%);
+    --font-basecolor: #fff;
+    --btn-background: linear-gradient(90deg,#3b82f6 30%, #1e41b1 83%);
+    --border-btn: #14265C solid 1px;
+    --border-btn-learn: solid 0.5px;
+    --font-color-learn: #F6CB1A;
+}
+
+.container {
+    min-height: 952px;
+    background: var(--background-img);
+    background-size: cover;
+    background-position: center;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & img {
+        width: 468px;
+        height: 468px;
+        margin: 0;
+        margin-top: 40px;
+        
+    }
+
+}
+
+article {
+    max-width: 781px;
+    margin: 0;
+
+    & h1 {
+        font-weight: 700;
+        font-size: 96px;
+        background: var(--title-color);
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+
+    }
+
+    & h2 {
+        font-weight: 600;
+        font-size: 36px;
+        color: var(--font-basecolor);
+        margin-top: 15px;
+    }
+
+    & p {
+        color: var(--font-basecolor);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        margin-top: 40px;
+        
+    }
+
+}
+
+.btn_container {
+    width: 370px;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 14px;
+    margin-top: 70px;
+
+}
+
+.btn_begin {
+ background: var(--btn-background);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 181px;
+ height: 67px;
+ border: var(--border-btn);
+ border-radius: 10px;
+ color: var(--font-basecolor);
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 16px;
+}
+
+.btn_learn {
+    width: 181px;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-btn-learn);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--font-color-learn);
+    font-weight: 800;
+    font-size: 16px;
+}

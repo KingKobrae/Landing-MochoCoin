@@ -10,7 +10,7 @@ function Navbar() {
             <img src="./src/assets/MochoLogo.svg" alt="MochoCoin Logo" />
             <span>Mochocoin</span>
         </div>
-
+            {/* Hacer que cada link redireccione a una parte de la página (posiblemente haya que reemplazar por buttons) */}
         <ul>
             <li>
                 <a href="index.html">Inicio</a>

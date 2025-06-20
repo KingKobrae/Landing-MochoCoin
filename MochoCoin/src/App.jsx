@@ -1,29 +1,18 @@
 import React from 'react'
 import Navbar from './components/navbar'
+import Home from './screens/home'
 
 function App() {
   return (
     <>
-        <header>
-            <Navbar />
-        </header>
+  
+      <Navbar />
+      <Home />
+    
 
-        <main>
+      
 
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-
-        </main>
-
-        <footer>
-            
-        </footer>
-       
+      
     </>
   )
 }

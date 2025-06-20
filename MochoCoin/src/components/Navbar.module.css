@@ -3,11 +3,10 @@
     --header-border: #E5E8EB;
     --Linear-gradient-blue_Yellow: linear-gradient(90deg,#63a6f5 10%, #f6cb1a 50%);
     --font-baseColor: #FFF;
-    --btn-background: linear-gradient(90deg,rgba(59, 130, 246, 1) 30%, rgba(30, 65, 177, 1) 83%);
+    --btn-background: linear-gradient(90deg,#3b82f6 30%, #1e41b1 83%);
 }
 
 nav {
-    position: absolute;
     width: 100vw;
     height: 80px;
     background-color: var(--background-color);
