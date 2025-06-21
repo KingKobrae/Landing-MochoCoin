@@ -9,7 +9,7 @@
 }
 
 .container {
-    min-height: 952px;
+    min-height: 902px;
     background: var(--background-img);
     background-size: cover;
     background-position: center;
@@ -69,7 +69,7 @@ article {
     justify-content: center;
     align-items: end;
     gap: 14px;
-    margin-top: 70px;
+    margin-top: 50px;
 
 }
 

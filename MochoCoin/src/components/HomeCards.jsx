@@ -1,9 +1,10 @@
 import React from 'react'
 import classes from '././HomeCards.module.css'
 import TemplateCard from './TemplateCard'
-import ShieldCheck from './ShieldCheck';
+import ShieldCheck from './ShieldCheck'
 import ClockRotateLeft from './ClockRotateLeft'
 import ChartTrending from './ChartTrending';
+import { Grid } from '@mui/material'
 
 const homeCards = [
     {
@@ -30,14 +31,18 @@ const homeCards = [
 function HomeCards() {
   return (
     <div className={classes.template}>
-        
-        {
-            homeCards.map(templateCard => (
-                <div key={templateCard.id} >
-                    <TemplateCard title={templateCard.title} icon={templateCard.icon} text={templateCard.text}/>
-                </div>
-            ))
-        }
+            {/* terminar de ajustar */}
+        <Grid direction="rows" container>
+            {
+                homeCards.map(templateCard => (
+                    <Grid item lg={4} key={templateCard.id} >
+                            
+                        <TemplateCard title={templateCard.title} icon={templateCard.icon} text={templateCard.text}/>
+                            
+                    </Grid>
+                ))
+            }
+        </Grid>
         
 
     </div>

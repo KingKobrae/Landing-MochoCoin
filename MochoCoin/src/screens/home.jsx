@@ -17,7 +17,9 @@ function Home() {
                     <img src="./src/assets/MochoLogo.svg" alt="MochoCoin Logo" />
                 </section>
 
+      
                 <HomeCards />
+           
 
                 <div className={classes.btn_container}>
                     <a href="#" className={classes.btn_begin}>Comenzar Ahora</a>

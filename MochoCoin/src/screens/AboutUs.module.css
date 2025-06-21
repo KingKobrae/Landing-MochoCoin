@@ -1,0 +1,53 @@
+:root {
+    --background-vector: url(./src/assets/Vector 1.svg) no-repeat;
+    --title-HighlightColor: linear-gradient(90deg,#63a6f5 15%, #f6cb1a 60%);
+    --About-title: #273153;
+    --About-text: #000000B5;
+
+
+}
+
+.container {
+    height: 1904px;
+    background: var(--background-vector);
+    background-position: top;
+    background-size: 100vw;
+}
+
+.title_container {
+    width: 644px;
+    height: 335px;
+/*     
+    display: flex;
+    justify-content: center;
+    
+    resolver el Error que impide el centrado*/
+
+
+    & h2 {
+        color: var(--About-title);
+        margin: 0;
+
+        & strong {
+           background: var(--title-HighlightColor);
+           background-clip: text;
+           color: transparent;
+           display: inline-block;
+        }
+    }
+
+    & p {
+        color: var(--About-text);
+        margin: 0;
+    }
+
+}
+
+.Summary {
+    display: flex;
+    justify-content: space-between;
+}
+.venecoin {
+    width: 428px;
+    height: 428px;
+}
