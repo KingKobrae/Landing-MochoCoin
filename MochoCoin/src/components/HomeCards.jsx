@@ -4,7 +4,7 @@ import TemplateCard from './TemplateCard'
 import ShieldCheck from './ShieldCheck'
 import ClockRotateLeft from './ClockRotateLeft'
 import ChartTrending from './ChartTrending';
-import { Grid } from '@mui/material'
+import Grid from '@mui/material/Grid';
 
 const homeCards = [
     {
@@ -31,11 +31,11 @@ const homeCards = [
 function HomeCards() {
   return (
     <div className={classes.template}>
-            {/* terminar de ajustar */}
-        <Grid direction="rows" container>
+       
+        <Grid direction="rows" container >
             {
                 homeCards.map(templateCard => (
-                    <Grid item lg={4} key={templateCard.id} >
+                    <Grid size={3} key={templateCard.id} >
                             
                         <TemplateCard title={templateCard.title} icon={templateCard.icon} text={templateCard.text}/>
                             

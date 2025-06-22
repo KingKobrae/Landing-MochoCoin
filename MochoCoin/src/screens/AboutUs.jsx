@@ -8,10 +8,10 @@ function AboutUs() {
   return (
     <section className={classes.container}>
       <article className={classes.title_container}>
-        {/* <div> */}
-          <h2>¿Qué es <strong>Mochocoin?</strong></h2>
-          <p>Mochocoin es la primera criptomoneda diseñada específicamente para el mercado venezolano, ofreciendo una alternativa segura, estable y rentable al bolívar y al dólar americano.</p>
-        {/* </div>  acomodar el CSS */}
+
+        <h2>¿Qué es <strong>Mochocoin?</strong></h2>
+        <p>Mochocoin es la primera criptomoneda diseñada específicamente para el mercado venezolano, ofreciendo una alternativa segura, estable y rentable al bolívar y al dólar americano.</p>
+
 
       </article>
 

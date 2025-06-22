@@ -5,7 +5,9 @@ function ProCard({title, text, icon}) {
   return (
     <article className={classes.container}>
         <div className={classes.title_container}>
-            {icon}
+            <div className={classes.img}>
+              {icon}
+            </div>
             <h3>{title}</h3>
         </div>
         <p>{text}</p>

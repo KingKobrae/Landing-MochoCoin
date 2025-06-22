@@ -22,7 +22,7 @@ const infoCard = [
         id: 3,
         title: 'Potencial de Crecimiento',
         icon: <IoTrendingUpOutline size='58px'/>,
-        text: 'Opotunidad de generar rendimientos a largo plazo.',
+        text: 'Oportunidad de generar rendimientos a largo plazo.',
     }
 ]
 

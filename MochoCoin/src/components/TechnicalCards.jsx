@@ -31,7 +31,7 @@ const info = [
 
 function TechnicalCards() {
   return (
-    <article className={classes.container}>
+    <article className={classes.Tech_container}>
         {
             info.map(card => (
                 <div key={card.id}>

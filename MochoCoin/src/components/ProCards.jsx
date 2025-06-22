@@ -1,5 +1,4 @@
 import React from 'react'
-import classes from './ProCards.module.css'
 import DollarSymbol from './DollarSymbol'
 import { IoTrendingUpOutline } from "react-icons/io5";
 import { TfiWorld } from "react-icons/tfi";
@@ -7,6 +6,7 @@ import Community from './Community'
 import { TbShield } from "react-icons/tb";
 import { HiOutlineBolt } from "react-icons/hi2";
 import ProCard from './ProCard';
+import { Grid } from '@mui/material';
 
 const info = [
     {
@@ -17,7 +17,7 @@ const info = [
     },
     {
         id: 2,
-        title: 'Creciemiento de Valor',
+        title: 'Crecimiento de Valor',
         text: 'A diferencia del dólar físico, Mochocoin tiene potencial de crecimiento y genera rendimientos para sus tenedores.',
         icon: <IoTrendingUpOutline size={'79px'} color='#4490EA' />,
     },
@@ -49,14 +49,16 @@ const info = [
 
 function ProCards() {
   return (
-    <section className={classes.container}>
-        {
-            info.map(card => (
-                <div key={card.id}>
-                    <ProCard title={card.title} icon={card.icon} text={card.text}/>
-                </div>
-            ))
-        }
+    <section>
+        <Grid direction='row' container rowSpacing={6}>
+            {
+                info.map(card => (
+                    <Grid size={4} key={card.id}>
+                        <ProCard title={card.title} icon={card.icon} text={card.text}/>
+                    </Grid>
+                ))
+            }
+        </Grid>
     </section>
   )
 }

@@ -1,0 +1,5 @@
+.Tech_container {
+    display: flex;
+    gap: 120px;
+    margin-left: 90px;
+}
