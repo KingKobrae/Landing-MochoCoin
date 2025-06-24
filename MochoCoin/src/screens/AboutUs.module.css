@@ -1,7 +1,7 @@
 :root {
     --background-vector: url(./src/assets/Vector 1.svg) no-repeat;
     --title-HighlightColor: linear-gradient(90deg,#63a6f5 15%, #f6cb1a 60%);
-    --About-title: #273153;
+    --About-title: #273153; 
     --About-text: #000000B5;
     --Tech-background: linear-gradient(90deg,rgba(12, 25, 49, 1) 71%, rgba(37, 77, 151, 1) 100%);
 

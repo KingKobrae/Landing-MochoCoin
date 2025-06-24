@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar'
 import Home from './screens/home'
 import AboutUs from './screens/AboutUs'
+import HowWork from './screens/HowWork'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <AboutUs />
-    
+      <HowWork />
 
       
 
