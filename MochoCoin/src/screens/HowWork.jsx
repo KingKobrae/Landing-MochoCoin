@@ -2,6 +2,8 @@ import React from 'react'
 import classes from './HowWork.module.css'
 import StepsCards from '../components/StepsCards'
 import BlockchainCards from '../components/BlockchainCards'
+import SpecsCards from '../components/SpecsCards'
+import MiningCards from '../components/MiningCards'
 
 function HowWork() {
   return (
@@ -36,13 +38,16 @@ function HowWork() {
         <section className={classes.specs}>
             <h3>Características Técnicas Detalladas</h3>
             <article className={classes.SpecsCards}>
-                
+                <SpecsCards />
             </article>
         </section>
 
         <section className={classes.mining}>
             <h3>Proceso de Minería y Validación</h3>
-            {/* Cards */}
+
+            <article className={classes.MiningCards}>
+                <MiningCards />
+            </article>
         </section>
 
     </section>

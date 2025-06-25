@@ -1,0 +1,28 @@
+.Tech_container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    margin-top: 1rem;
+
+}
+
+.text_container{
+    
+    & h3 {
+        font-weight: 700;
+        font-size: clamp(1rem, 1.2rem, 2rem);
+        margin-top: 0.6rem;
+    }
+
+    & div {
+        font-weight: 700;
+        color: var(--font-baseColor);
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: clamp(3rem, 4.3rem, 5rem);
+        height: clamp(3rem, 4.3rem, 5rem);
+    }
+}

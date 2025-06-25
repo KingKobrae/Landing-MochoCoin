@@ -1,0 +1,21 @@
+.SpecsCards_container {
+    width: 100%;
+}
+
+.card_container {
+
+    & h3 {
+        font-weight: 500;
+        font-size: clamp(1rem, 2.2rem, 3rem);
+        color: var(--Tech-color);
+        width: 100%;
+        text-align: start;
+    }
+
+    & p {
+        font-weight: 300;
+        font-size: clamp(1rem, 1.5rem, 2rem);
+        line-height: clamp(1.5rem, 2rem, 2.5rem);
+        margin-top: 1rem;
+    }
+}

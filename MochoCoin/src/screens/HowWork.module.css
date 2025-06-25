@@ -6,7 +6,7 @@
 }
 
 .HowWork_container {
-    height: 1904px;
+    height: 1870px;
     background: var(--HowWork-background);
     display: flex;
     flex-direction: column;
@@ -124,4 +124,28 @@
         color: var(--font-baseColor);
         margin-top: clamp(1rem, 1.5rem, 2rem);
     }
+}
+
+.SpecsCards {
+    min-width: 100%;
+}
+
+.mining {
+    width: 96vw;
+    height: clamp(12rem, 13.2rem, 14rem);
+    background: var(--Specs-background);
+    margin-top: clamp(1rem, 1.6rem, 2rem);
+    border-radius: 70px;
+
+    & h3 {
+        margin-top: clamp(1rem, 1.5rem, 2rem);
+        text-align: center;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+        color: var(--font-baseColor);
+    }
+}
+
+.MiningCards {
+    min-width: 100%;
 }

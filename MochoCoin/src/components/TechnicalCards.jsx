@@ -34,7 +34,7 @@ function TechnicalCards() {
     <article className={classes.Tech_container}>
         {
             info.map(card => (
-                <div key={card.id}>
+                <div key={card.id} className={classes.text_container}>
                     <TechnicalCard title={card.title} text={card.text}/>
                 </div>
             ))

@@ -1,5 +1,31 @@
+:root {
+    --Tech-color: #FFF700;
+}
+
 .Tech_container {
     display: flex;
-    gap: 120px;
-    margin-left: 90px;
+    min-width: 98%;
+    justify-content: space-between;
+    
+}
+
+.text_container {
+    display: flex;
+    text-align: center;
+    
+    
+    & h3 {
+        color: var(--Tech-color);
+        font-weight: 300;
+        font-size: 32px;
+        text-wrap: nowrap;
+    }
+
+    & p {
+        color: var(--font-baseColor);
+        font-weight: 300;
+        font-size: 32px;
+        margin-top: 0;
+        text-wrap: nowrap;
+    }
 }

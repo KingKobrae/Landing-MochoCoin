@@ -109,8 +109,8 @@
 }
 
 .Technical {
-    width: 1346px;
-    height: 200px;
+    width: 92vw;
+    height: clamp(11rem, 12.5rem, 13rem);
     border-radius: 70px;
     background: var(--Tech-background);
     display: flex;
@@ -121,7 +121,7 @@
     & h2 {
         color: var(--font-baseColor);
         font-weight: 300;
-        font-size: 36px;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
         margin-top: 10px;
     }
 }
