@@ -1,5 +1,7 @@
 :root {
     --HowWork-background: linear-gradient(113.83deg, #1E293B 13.5%, #3B82F6 99.94%);
+    --HowWork-imgShadow: 0px 4px 10px 15px #00000040;
+    --Specs-background: #2A344B;
 
 }
 
@@ -59,12 +61,67 @@
 }
 
 .Blockchain {
-    /* display: flex; */
+    display: flex;
+    color: var(--font-baseColor);
+    margin-top: 2rem;
+    margin-left: 1rem;
+
 
 
     & img {
-        width: 695px;
-        height: 391px;
+        width: clamp(41rem, 42.4rem, 43rem);
+        height: clamp(22rem, 23.4rem, 24rem);
         border-radius: 50px;
+        box-shadow: var(--HowWork-imgShadow);
+        
+    }
+}
+.Blockchain_text {
+    width: 600px;
+    height: 386px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+
+    & h3, p {      
+        width: clamp(35rem, 36.2rem, 37rem);  
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    & h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 2rem, 2.2rem);
+        width: clamp(32rem, 33.1rem, 34rem);  
+    }
+
+    & p {
+        font-weight: 300;
+        font-size: clamp(1rem, 1.5rem, 2rem);
+        line-height: 2rem;
+        margin-top: 0;
+    }
+}
+
+.BlockchainCards {
+    margin-left: clamp(0.5rem, 1rem, 1.5rem);
+    margin-top: clamp(0.5rem, 1rem, 1.5rem);
+}
+
+.specs {
+    width: 96vw;
+    height: clamp(23rem, 24.8rem, 25rem);
+    border-radius: 70px;
+    margin-top: clamp(3rem, 3.5rem, 4rem);
+    background: var(--Specs-background);
+
+    & h3 {
+        text-align: center;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+        color: var(--font-baseColor);
+        margin-top: clamp(1rem, 1.5rem, 2rem);
     }
 }

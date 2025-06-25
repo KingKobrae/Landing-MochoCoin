@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './HowWork.module.css'
 import StepsCards from '../components/StepsCards'
+import BlockchainCards from '../components/BlockchainCards'
 
 function HowWork() {
   return (
@@ -21,17 +22,22 @@ function HowWork() {
         <article className={classes.Blockchain}>
             <img src="./src/assets/Mining_section.jpg" alt="Mining" />
             <div className={classes.Blockchain_text}>
+                
                 <h3>Tecnología Blockchain Avanzada</h3>
                 <p>Mochocoin utiliza la misma tecnología probada que Bitcoin, pero optimizada para las necesidades específicas del mercado venezolano.</p>
 
-                {/* Card */}
+                <article className={classes.BlockchainCards}>
+                    <BlockchainCards />
+                </article>
 
             </div>
         </article>
 
         <section className={classes.specs}>
             <h3>Características Técnicas Detalladas</h3>
-            {/* Cards */}
+            <article className={classes.SpecsCards}>
+                
+            </article>
         </section>
 
         <section className={classes.mining}>

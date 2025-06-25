@@ -1,0 +1,21 @@
+.card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(20rem, 21.3rem, 22rem);
+    height: clamp(4rem, 5rem, 6rem);
+    border-radius: 3rem;
+    margin-left: 0;
+    margin-right: clamp(1rem, 1.8rem, 2rem);
+    
+
+    & h3 {
+        font-size: clamp(1rem, 1.5rem, 2rem);
+        font-weight: 300;
+        width: clamp(10rem, 11.6rem, 12rem);
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+}

@@ -1,5 +1,5 @@
 :root {
-    --card-shadow: #00000040 -4px -4px 10em;
+    --card-shadow: 0px 4px 50px 10px #00000040;
     --Pro-text: #333333CC;
 }
 
