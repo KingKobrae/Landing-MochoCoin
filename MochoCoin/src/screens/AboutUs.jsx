@@ -6,7 +6,7 @@ import TechnicalCards from '../components/TechnicalCards'
 
 function AboutUs() {
   return (
-    <section className={classes.container}>
+    <section className={classes.container} id='AboutUs'>
       <article className={classes.title_container}>
 
         <h2>¿Qué es <strong>Mochocoin?</strong></h2>

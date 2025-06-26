@@ -1,11 +1,30 @@
 import React from 'react'
 import classes from './././home.module.css'
 import HomeCards from '../components/HomeCards'
+import ButtonLink from '../components/ButtonLink'
+
+const HomeInfo = [
+    {
+        id: 1,
+        text: 'Comenzar Ahora',
+        link: '#',
+        bg: 'linear-gradient(90deg,#3b82f6 30%, #1e41b1 83%)',
+        font: '#FFF',
+        border: '#14265C',
+    },
+    {
+        id: 2,
+        text: 'Aprender Más',
+        link: '#',
+        bg: 'transparent',
+        font: '#F6CB1A',
+    },
+]
 
 function Home() {
   return (
         <>
-            <div className={classes.container}>
+            <div className={classes.container} id='home'>
                 <section className={classes.firstSection}>
                     <article>
                         <h1>Mochocoin</h1>
@@ -22,8 +41,14 @@ function Home() {
            
 
                 <div className={classes.btn_container}>
-                    <a href="#" className={classes.btn_begin}>Comenzar Ahora</a>
-                    <a href="#" className={classes.btn_learn}>Aprender Más</a>
+                    {
+                        HomeInfo.map(btn => (
+                            <div key={btn.id} className={classes.btn_box} >
+                                <ButtonLink text={btn.text} link={btn.link} textColor={btn.font} bg={btn.bg} bColor={btn.border}/>
+                            </div>
+                        ))
+                    }
+
                 </div>
             </div>
         </>

@@ -7,7 +7,7 @@ import MiningCards from '../components/MiningCards'
 
 function HowWork() {
   return (
-    <section className={classes.HowWork_container}>
+    <section className={classes.HowWork_container} id='HowWork'>
 
         <div className={classes.HowWork_title}>
             <h2>¿Cómo funciona <strong>Mochocoin?</strong></h2>

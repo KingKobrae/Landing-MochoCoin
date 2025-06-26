@@ -1,5 +1,22 @@
 import React from 'react'
 import classes from '././Navbar.module.css'
+import ButtonLink from './ButtonLink';
+
+const handleScroll = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId)
+    if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+}
+
+const buttonLinkInfo = [
+    {
+        id: 1,
+        text: 'Comenzar Ahora',
+        link: '#',
+    },
+]
 
 function Navbar() {
   return (
@@ -10,33 +27,43 @@ function Navbar() {
             <img src="./src/assets/MochoLogo.svg" alt="MochoCoin Logo" />
             <span>Mochocoin</span>
         </div>
-            {/* Hacer que cada link redireccione a una parte de la página (posiblemente haya que reemplazar por buttons) */}
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="#">¿Qué es Mochocoin?</a>
-            </li>
-            <li>
-                <a href="#">Cómo funciona</a>
-            </li>
-            <li>
-                <a href="#">Mercado</a>
-            </li>
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contacto</a>
-            </li>
-        </ul>
 
-        <a href="#" className={classes.btn__navbar}>Comenzar Ahora</a>
+        <div className={classes.links}>
 
+
+            <ul>
+                <li>
+                    <a href="#home" onClick={(e)=> handleScroll(e, "home")}>Inicio</a>
+                </li>
+                <li>
+                    <a href="#AboutUs" onClick={(e)=> handleScroll(e, "AboutUs")}>¿Qué es Mochocoin?</a>
+                </li>
+                <li>
+                    <a href="#HowWork" onClick={(e)=> handleScroll(e, "HowWork")}>Cómo funciona</a>
+                </li>
+                <li>
+                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>Mercado</a>
+                </li>
+                <li>
+                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>FAQ</a>
+                </li>
+                <li>
+                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>Blog</a>
+                </li>
+                <li>
+                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>Contacto</a>
+                </li>
+            </ul>
+
+            {
+            buttonLinkInfo.map(btn => (
+                    <div key={btn.id} className={classes.btn__navbar}>
+                        <ButtonLink text={btn.text} link={btn.link} />
+                    </div>
+                ))
+            }
+
+        </div>
     </nav>
     </>
   )
