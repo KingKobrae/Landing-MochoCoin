@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import Home from './screens/home'
 import AboutUs from './screens/AboutUs'
 import HowWork from './screens/HowWork'
+import Market from './screens/Market'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Home />
       <AboutUs />
       <HowWork />
-
+      <Market />
       
 
       
