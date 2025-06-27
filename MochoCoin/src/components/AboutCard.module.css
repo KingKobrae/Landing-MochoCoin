@@ -4,21 +4,21 @@
 
 .card_container {
     display: flex;
-    gap: 20px;
+    gap: 1.2rem;
 
 }
 
 .info {
     & h3 {
         font-weight: 600;
-        font-size: 24px;
+        font-size: clamp(1rem, 1.5rem, 2.5rem);
         color: var(--aboutCard-color);
     }
 
     
     & p {
         font-weight: 600;
-        font-size: 24px;
+        font-size: clamp(1rem, 1.5rem, 2.5rem);
         color: var(--aboutCard-color);
         width: 100%;
         margin: 0;

@@ -44,7 +44,7 @@ function StepsCards() {
         <Grid direction={'row'} container>
             {
                 stepsCardData.map(card => (
-                    <Grid size={2.8} className={classes.card_container} key={card.id}>
+                    <Grid size={2.85} className={classes.card_container} key={card.id}>
                         <StepsCard title={card.title} text={card.text} icon={card.icon} number={card.number} />
                     </Grid>
                 ))

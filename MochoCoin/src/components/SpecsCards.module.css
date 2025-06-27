@@ -17,5 +17,6 @@
         font-size: clamp(1rem, 1.5rem, 2rem);
         line-height: clamp(1.5rem, 2rem, 2.5rem);
         margin-top: 1rem;
+        color: var(--font-baseColor);
     }
 }

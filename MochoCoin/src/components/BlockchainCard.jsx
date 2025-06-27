@@ -5,7 +5,7 @@ function BlockchainCard({icon, title,}) {
   return (
     <>
 
-      {icon}
+      <div>{icon}</div>
       <h3>{title}</h3>
     
     </>

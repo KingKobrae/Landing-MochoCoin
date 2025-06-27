@@ -18,22 +18,22 @@
     align-items: center;
 
     & img {
-        width: 468px;
-        height: 468px;
+        width: clamp(28rem, 29.2rem, 30rem);
+        height: clamp(28rem, 29.2rem, 30rem);
         margin: 0;
-        margin-top: 40px;
+        margin-top: 2.5rem;
         
     }
 
 }
 
-article {
-    max-width: 781px;
+.title_container {
+    max-width: clamp(47rem, 48.8rem, 49rem);
     margin: 0;
 
     & h1 {
         font-weight: 700;
-        font-size: 96px;
+        font-size: clamp(5rem, 6rem, 7rem);
         background: var(--title-color);
         background-clip: text;
         color: transparent;
@@ -43,30 +43,30 @@ article {
 
     & h2 {
         font-weight: 600;
-        font-size: 36px;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
         color: var(--font-basecolor);
-        margin-top: 15px;
+        margin-top: 0.9rem;
     }
 
     & p {
         color: var(--font-basecolor);
         font-weight: 400;
-        font-size: 24px;
-        line-height: 40px;
-        margin-top: 40px;
+        font-size: clamp(1rem, 1.5rem, 2rem);
+        line-height: clamp(1rem, 2.5rem, 3rem);
+        margin-top: 2.5rem;
         
     }
 
 }
 
 .btn_container {
-    width: 370px;
-    height: 79px;
+    width: clamp(22rem, 23rem, 24rem);
+    height: clamp(3rem, 4.9rem, 5.5rem);
     display: flex;
     justify-content: center;
     align-items: end;
-    gap: 14px;
-    margin-top: 50px;
+    gap: 0.8rem;
+    margin-top: 3rem;
 
 }
 
@@ -76,15 +76,14 @@ article {
         border-radius: 10px;
         border-style: solid;
         border-width: 1px;
-        width: 181px;
-        height: 67px;
+        width: clamp(10rem, 11.3rem, 12.3rem);
+        height: clamp(3rem, 4rem, 5rem);
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         font-weight: 600;
-        font-size: 16px;
-        background-clip: content-box;
+        font-size: clamp(0.5rem, 1rem, 1.5rem);
 
     }
 

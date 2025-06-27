@@ -50,7 +50,7 @@ const info = [
 function ProCards() {
   return (
     <section>
-        <Grid direction='row' container rowSpacing={6}>
+        <Grid direction='row' container rowSpacing={6} columnSpacing={9}>
             {
                 info.map(card => (
                     <Grid size={4} key={card.id}>

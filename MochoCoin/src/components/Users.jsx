@@ -7,6 +7,7 @@ function Users() {
     width={50}
     height={40}
     fill="none"
+    viewBox="0 0 50 50"
   >
     <path
       stroke="#fff"

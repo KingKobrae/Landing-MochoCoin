@@ -10,23 +10,29 @@
     & h3 {
         font-size: clamp(1rem, 2rem, 3rem);
         font-weight: 500;
-        width: 302px;
-        height: 38px;
+        width: clamp(17rem, 18.8rem, 19.5rem);
+        height: clamp(4rem, 5rem, 6rem);
+        display: flex;
+        align-items: center;
+        margin-top: 0.6rem;
     }
 
     & p {
         font-weight: 400;
         font-size: clamp(1rem, 1.25rem, 2rem);
-        width: 280px;
-        margin-top: 60px;
+        width: clamp(16rem, 17.5rem, 18.5rem);
+        padding: 0 1.2rem 0 1.2rem;
+        margin-top: 0.6rem;
         line-height: clamp(0.5rem, 1.5rem, 2rem);
+        color: var(--font-baseColor);
     }
 }
 
 .top {
+    width: 100%;
     display: flex;
-    margin-top: 30px;
-    gap: 100px;
+    margin-top: 1.8rem;
+    justify-content: space-between;
 
     & span {
         display: inline-block;

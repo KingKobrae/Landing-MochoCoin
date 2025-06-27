@@ -26,7 +26,7 @@ function Home() {
         <>
             <div className={classes.container} id='home'>
                 <section className={classes.firstSection}>
-                    <article>
+                    <article className={classes.title_container}>
                         <h1>Mochocoin</h1>
                         <h2>La Criptomoneda del futuro de Venezuela</h2>
                         <p>

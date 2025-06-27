@@ -32,10 +32,10 @@ function HomeCards() {
   return (
     <div className={classes.template}>
        
-        <Grid direction="rows" container >
+        <Grid direction="rows" container className={classes.Card_container}>
             {
                 homeCards.map(templateCard => (
-                    <Grid size={3} key={templateCard.id} >
+                    <Grid size={4} key={templateCard.id} >
                             
                         <TemplateCard title={templateCard.title} icon={templateCard.icon} text={templateCard.text}/>
                             

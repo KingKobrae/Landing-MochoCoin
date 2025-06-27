@@ -19,6 +19,7 @@
     flex-direction: column;
     gap: 1.25rem;
     margin-top: 3rem;
+    width: 100%;
 
     & h2 {
         font-weight: 600;
@@ -37,7 +38,7 @@
         font-weight: 400;
         font-size: clamp(1rem, 2rem, 2.5rem);
         line-height: clamp(2rem, 3.5rem, 4rem);
-        width: 77%;
+        width: 80%;
     }
 
 }
@@ -46,12 +47,13 @@
     display: flex;
     flex-direction: column;
     margin-top: clamp(2rem, 3.75rem, 4rem);
-    gap: 50px;
+    gap: 3rem;
+    width: 98vw;
 
     & h3 {
         display: flex;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
         text-align: center;
         font-weight: 600;
         color: var(--font-baseColor);
@@ -59,12 +61,15 @@
     }
 
 }
+.stepsCards {
+    margin: 0;
+}
 
 .Blockchain {
     display: flex;
     color: var(--font-baseColor);
     margin-top: 2rem;
-    margin-left: 1rem;
+    width: 96vw;
 
 
 
@@ -77,37 +82,31 @@
     }
 }
 .Blockchain_text {
-    width: 600px;
-    height: 386px;
+    width: clamp(36rem, 37.5rem, 38rem);
+    height: clamp(23rem, 24rem, 25rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.6rem;
 
-    & h3, p {      
-        width: clamp(35rem, 36.2rem, 37rem);  
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-
     & h3 {
         text-align: center;
         font-weight: 700;
         font-size: clamp(1.5rem, 2rem, 2.2rem);
-        width: clamp(32rem, 33.1rem, 34rem);  
+        width: 100%; 
     }
 
     & p {
         font-weight: 300;
         font-size: clamp(1rem, 1.5rem, 2rem);
         line-height: 2rem;
-        margin-top: 0;
+        width: 90%;
     }
 }
 
 .BlockchainCards {
-    margin-left: clamp(0.5rem, 1rem, 1.5rem);
     margin-top: clamp(0.5rem, 1rem, 1.5rem);
+    width: 90%;
 }
 
 .specs {

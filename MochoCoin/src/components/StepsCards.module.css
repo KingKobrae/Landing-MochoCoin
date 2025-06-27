@@ -1,10 +1,10 @@
 .card_container {
-    width: 345px;
-    height: 300px;
+    width: clamp(20rem, 23rem, 22.5rem);
+    height: clamp(17rem, 18.7rem, 19.5rem);
     background: var(--StepCard-background);
     border-radius: 36px;
 }
 
 .StepsCards_container {
-    width: 100vw;
+    width: 100%;
 }
