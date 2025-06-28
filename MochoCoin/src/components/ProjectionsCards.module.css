@@ -1,0 +1,28 @@
+:root {
+    --Projections-ChartColor: #8BC0FE;
+}
+
+
+.ProjectionsCards_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+
+.Card_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: start;
+
+    & svg {
+        color: var(--Projections-ChartColor);
+    }
+
+    & p {
+        color: var(--font-baseColor);
+        width: clamp(34rem, 35.1rem, 36rem);
+    }
+}

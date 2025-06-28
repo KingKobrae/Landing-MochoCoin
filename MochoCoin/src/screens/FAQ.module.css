@@ -1,0 +1,9 @@
+:root {
+    --FAQ-background: linear-gradient(116.39deg, #1E293B 0.32%, #3B82F6 100%);
+
+}
+
+.FAQ_container {
+    background: var(--FAQ-background);
+    height: 3847px;
+}

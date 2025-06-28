@@ -1,9 +1,22 @@
 :root {
     --Chart_Shadow: 0px 4px 50px 10px #00000040;
+    --Chart_imgShadow: 0px 4px 45px 10px #00000040;
+    --MCO-color: #294465;
+    --Chart-Pcolor: #000000CC;
+    --Data1-color: #0E043B;
+    --Data2-color: #020F45;
+    --Interesting-shadow: 0px 4px 50px 10px #00000040;
+    --Calendar-color: #63A6F5;
+    --ChartBar-color: #43DB14;
+    --Analysis-background: #0C1931;
+    --Factors-title: #F6CB1A;
+    --Projections-title: #8BC0FED9;
+    --Warning-background: #D9D9D93D;
+
 }
 
 .Market_container {
-    height: 2428px;
+    height: 2320px;
     background: var(--background-vector);
     background-position: top;
     background-size: 100vw;
@@ -51,5 +64,255 @@
     margin-top: 3rem;
     border-radius: 45px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.2rem;
+    gap: 2rem;
 
+
+}
+
+.Chart_img {
+    width: clamp(34rem, 35.5rem, 36rem);
+    height: clamp(22rem, 23.7rem, 24.5rem);
+    border-radius: 45px;
+    box-shadow: var(--Chart_imgShadow);
+
+}
+
+.Cost {
+    width: clamp(41rem, 42.5rem, 43rem);
+    height: 100%;
+
+}
+
+.Chart_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1rem;
+
+    & img {
+        width: clamp(8rem, 9rem, 10rem);
+        height: clamp(8rem, 9rem, 10rem);
+    
+    }
+}
+.Chart_title_text {
+
+
+    & h3 {
+        color: var(--MCO-color);
+        font-weight: 700;
+        font-size: clamp(1.5rem, 2.2rem, 3.5rem);
+    }
+
+    & strong {
+        font-size: clamp(2rem, 3.8rem, 4.5rem);
+        background: var(--title-HighlightColor);
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
+
+    & p {
+        color: var(--Chart-Pcolor);
+        font-weight: 300;
+        font-size: clamp(1rem, 1.5rem, 2.5rem);
+    }
+}
+
+.data1 {
+    font-weight: 600;
+    font-size: clamp(3rem, 4rem, 5rem);
+    color: var(--Data1-color);
+    margin-left: 4rem;
+    margin-top: 3rem;
+    display: block;
+
+}
+.data2 {
+    color: var(--Data2-color);
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5rem, 2.5rem);
+    margin-left: 4.6rem;
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+
+    & span {
+        display: block;
+        margin: 0;
+    }
+
+    & svg {
+        display: block;
+        margin: 0;
+    }
+
+}
+
+.btn_container {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.StatsCards {
+    width: 96vw;
+
+}
+
+.Interesting_info {
+    width: 93vw;
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.Historical_performance {
+    width: clamp(39rem, 40.2rem, 41.5rem);
+    height: clamp(36rem, 37.7rem, 38.7rem);
+    border-radius: 45px;
+    box-shadow: var(--Interesting-shadow);
+}
+
+.Historical_performance_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--font-blackColor);
+    font-weight: 700;
+    font-size: clamp(1rem, 1.5rem, 2.5rem);
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    gap: 1rem;
+
+    & h3 {
+        margin: 0;
+    }
+
+    & svg {
+        color: var(--Calendar-color);
+        margin: 0;    
+    }
+}
+
+.Levels {
+    width: clamp(39rem, 40.2rem, 41.5rem);
+    height: clamp(36rem, 37.7rem, 38.7rem);
+    border-radius: 45px;
+    box-shadow: var(--Interesting-shadow);
+    
+}
+
+.Levels_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--font-blackColor);
+    font-weight: 700;
+    font-size: clamp(1rem, 1.5rem, 2.5rem);
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    gap: 1rem;
+
+    & h3 {
+        margin: 0;
+    }
+
+    & svg {
+        color: var(--ChartBar-color);
+        margin: 0;
+    }
+
+}
+
+.Analysis {
+    width: 90vw;
+    height: clamp( 34rem, 35rem, 36rem);
+    background: var(--Analysis-background);
+    border-radius: 20px;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+
+}
+
+.Analysis > h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 2.2rem, 3rem);
+    color: var(--font-baseColor);
+}
+
+.More_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 90%;
+    margin-top: 1.5rem;
+
+}
+
+.Factors {
+    width: clamp(29rem, 30rem, 31rem);
+
+    & h3 {
+        color: var(--Factors-title);
+        font-weight: 600;
+        font-size: clamp(1rem, 1.8rem, 2.5rem);
+        margin-left: 4rem;
+
+    }
+}
+
+.Projections {
+    width: clamp(29rem, 30rem, 31rem);
+
+    & h3 {
+        font-weight: 600;
+        font-size: clamp(1rem, 1.8rem, 2.5rem);
+        color: var(--Projections-title);
+        margin-left: 4rem;
+    }
+}
+
+.Warning {
+    background: var(--Warning-background);
+    border-radius: 20px;
+    width: 93%;
+    height: clamp(10rem, 11.9rem, 12.5rem);
+    margin-top: 1rem;
+
+    & p {
+        color: var(--font-baseColor);
+        font-weight: 400;
+        font-size: clamp(0.5rem, 1.2rem, 2rem);
+        line-height: clamp(1rem, 1.8rem, 2.5rem);
+        width: 95%;
+        margin-top: 1rem;
+        margin-left: 3.6rem;
+    }
+}
+
+.Warning_title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--Factors-title);
+    gap: 1rem;
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+    
+    & svg {
+        margin: 0;
+
+    }
+
+    & h3 {
+        margin: 0;
+        font-weight: 700;
+        font-size: clamp(1rem, 1.8rem, 2.5rem);
+    }
 }

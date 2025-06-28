@@ -4,10 +4,17 @@ import { IoIosTrendingUp } from "react-icons/io";
 import { CiCalendar } from "react-icons/ci";
 import { LuChartColumn } from "react-icons/lu";
 import { TiWarning } from "react-icons/ti";
+import ChartButtons from '../components/ChartButtons';
+import StatsCards from '../components/StatsCards';
+import HistorialCards from '../components/HistorialCards';
+import LevelsCards from '../components/LevelsCards';
+import FactorsCards from '../components/FactorsCards';
+import ProjectionsCards from '../components/ProjectionsCards';
+
 
 function Market() {
   return (
-    <section className={classes.Market_container}>
+    <section className={classes.Market_container} id='Market'>
 
         <div className={classes.title_container}>
             <h2>Mercado <strong>Mochocoin</strong></h2>
@@ -30,39 +37,47 @@ function Market() {
 
                 <span className={classes.data1}>$ 0.70</span>
                 <div className={classes.data2}>
-                    <IoIosTrendingUp />
+                    <IoIosTrendingUp size={40}/>
                     <span>+ 1.70%</span>
                 </div>
 
                 <div className={classes.btn_container}>
-                    {/* button */}
+                    <ChartButtons />
                 </div>
 
             </article>
 
-            <img src="./src/assets/Chart.png" alt="Si lees esto significa que algo cargó mal" />
+            <img src="./src/assets/Chart.png" className={classes.Chart_img} alt="Si lees esto significa que algo cargó mal" />
 
         </section>
 
-        <article>
-            {/* Cards */}
+        <article className={classes.StatsCards}>
+            <StatsCards />
         </article>
 
         <section className={classes.Interesting_info}>
 
             <section className={classes.Historical_performance}>
-                <CiCalendar />
-                <h3>Rendimiento Histórico</h3>
-                <article>
-                    {/* Cards */}
+
+                <div className={classes.Historical_performance_title}>
+                    <CiCalendar size={77}/>
+                    <h3>Rendimiento Histórico</h3>
+                </div>
+                
+                <article className={classes.HistorialCards}>
+                    <HistorialCards />
                 </article>
             </section>
 
             <section className={classes.Levels}>
-                <LuChartColumn />
-                <h3>Niveles Técnicos</h3>
-                <article>
-                    {/* Cards */}
+
+                <div className={classes.Levels_title}>
+                    <LuChartColumn size={77}/>
+                    <h3>Niveles Técnicos</h3>
+                </div>
+
+                <article className={classes.LevelsCards}>
+                    <LevelsCards />
                 </article>
             </section>
 
@@ -76,8 +91,8 @@ function Market() {
                 <article className={classes.Factors}>
                     <h3>Factores Positivos</h3>
 
-                    <article>
-                        {/* Cards */}
+                    <article className={classes.FactorsCards}>
+                        <FactorsCards />
                     </article>
                     
                 </article>
@@ -85,8 +100,8 @@ function Market() {
                 <article className={classes.Projections}>
                     <h3>Proyecciones 2025</h3>
 
-                    <article>
-                        {/* Cards */}
+                    <article className={classes.ProjectionsCards}>
+                        <ProjectionsCards />
                     </article>
 
                 </article>
@@ -96,9 +111,11 @@ function Market() {
             <section className={classes.Warning}>
 
                 <div className={classes.Warning_title}>
-                    <TiWarning />
+                    <TiWarning size={45.8}/>
                     <h3>Aviso Legal</h3>
                 </div>
+
+                <p>Las proyecciones y análisis presentados son para fines educativos y de proyecto académico. Los precios de criptomonedas son volátiles y pueden fluctuar significativamente. Esta información no constituye asesoramiento financiero. Consulte con un profesional antes de tomar decisiones de inversión.</p>
             </section>
         </section>
 

@@ -42,10 +42,10 @@ function Navbar() {
                     <a href="#HowWork" onClick={(e)=> handleScroll(e, "HowWork")}>Cómo funciona</a>
                 </li>
                 <li>
-                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>Mercado</a>
+                    <a href="#Market" onClick={(e)=> handleScroll(e, "Market")}>Mercado</a>
                 </li>
                 <li>
-                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>FAQ</a>
+                    <a href="#FAQ" onClick={(e)=> handleScroll(e, "FAQ")}>FAQ</a>
                 </li>
                 <li>
                     <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>Blog</a>
