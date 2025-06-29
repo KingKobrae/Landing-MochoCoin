@@ -1,0 +1,43 @@
+:root {
+    --Trusted-background: #172F59;
+    --Trusted-textColor: #8C8C8C;
+    --Trusted-LinkColor: #4785F9;
+}
+
+.Trusted_SourcesCards_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5.8rem;
+}
+
+.Card_container {
+    width: clamp(21rem, 22.8rem, 23.5rem);
+    height: clamp(17rem, 18.7rem, 19.5rem);
+    background: var(--Trusted-background);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+
+    & h3 {
+        font-weight: 500;
+        color: var(--font-baseColor);
+    }
+
+    & p {
+        color: var(--Trusted-textColor);
+        font-weight: 300;
+    }
+
+    & a {
+        text-decoration: none;
+        color: var(--Trusted-LinkColor);
+        font-weight: 800;
+        font-style: italic;
+
+    }
+
+}

@@ -5,6 +5,13 @@ import { BsShieldCheck } from "react-icons/bs";
 import { FiDollarSign } from "react-icons/fi";
 import { GoPeople } from "react-icons/go";
 import FlashPayment from '../components/FlashPayment';
+import BasicsCards from '../components/BasicsCards';
+import SecurityCards from '../components/SecurityCards';
+import TransactionsCards from '../components/TransactionsCards';
+import UsageCards from '../components/UsageCards';
+import InvestmentCards from '../components/InvestmentCards';
+import SupportButtons from '../components/SupportButtons';
+import Trusted_SourcesCards from '../components/Trusted_SourcesCards';
 
 function FAQ() {
   return (
@@ -20,8 +27,8 @@ function FAQ() {
 
             </div>
 
-            <article>
-                {/* Cards */}
+            <article className={classes.BasicsCards}>
+                <BasicsCards />
             </article>
 
         </section>
@@ -35,8 +42,8 @@ function FAQ() {
 
             </div>
 
-            <article>
-                {/* Cards */}
+            <article className={classes.SecurityCards}>
+                <SecurityCards />
             </article>
 
         </section>
@@ -50,8 +57,8 @@ function FAQ() {
 
             </div>
 
-            <article>
-                {/* Cards */}
+            <article className={classes.TransactionsCards}>
+                <TransactionsCards />
             </article>
 
         </section>
@@ -65,23 +72,23 @@ function FAQ() {
 
             </div>
 
-            <article>
-                {/* Cards */}
+            <article className={classes.UsageCards}>
+                <UsageCards />
             </article>
 
         </section>
 
-        <section className={classes.Security}>
+        <section className={classes.Investment}>
 
-            <div className={classes.Security_title}>
+            <div className={classes.Investment_title}>
 
                 <FlashPayment />
-                <h3>Seguridad</h3>
+                <h3>Inversión y Rendimientos</h3>
 
             </div>
 
-            <article>
-                {/* Cards */}
+            <article className={classes.InvestmentCards}>
+                <InvestmentCards />
             </article>
 
         </section>
@@ -91,14 +98,14 @@ function FAQ() {
             <h3>¿No encontraste la respuesta que buscabas?</h3>
             <p>Nuestro equipo de soporte está disponible 24/7 para ayudarte</p>
 
-            <article>
-                {/* Cards */}
+            <article className={classes.SupportButtons}>
+                <SupportButtons />
             </article>
 
         </section>
 
-        <article>
-            {/* Cards */}
+        <article className={classes.Trusted_SourcesCards}>
+            <Trusted_SourcesCards />
         </article>
 
         

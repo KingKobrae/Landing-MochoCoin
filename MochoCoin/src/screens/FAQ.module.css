@@ -1,9 +1,228 @@
 :root {
     --FAQ-background: linear-gradient(116.39deg, #1E293B 0.32%, #3B82F6 100%);
+    --FAQ-sectionBackground: #1E293B;
+    --Basics_titleBackground: #324155;
+    --Support-background: #1636D4C9;
 
 }
 
 .FAQ_container {
     background: var(--FAQ-background);
     height: 3847px;
+    padding-top: 3rem;
+
+    & h2 {
+        width: 100%;
+        font-weight: 600;
+        font-size: clamp(3rem, 4rem, 5rem);
+        text-align: center;
+        color: var(--font-baseColor);
+
+    }
+
+    & strong {
+        background: var(--title-HighlightColor);
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
+}
+
+.Basics {
+    height: clamp(32rem, 33.1rem, 34rem);
+    width: 92vw;
+    background: var(--FAQ-sectionBackground);
+    border-radius: 45px;
+    margin-top: 3.5rem;
+}
+
+.Basics_title {
+    background: var(--Basics_titleBackground);
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    color: var(--font-baseColor);
+    gap: 1rem;
+
+    & svg {
+        margin: 0;
+        margin-left: 2rem;
+        
+    }
+
+    & h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+
+    }
+}
+
+.Transactions {
+    height: clamp(32rem, 33.1rem, 34rem);
+    width: 92vw;
+    background: var(--FAQ-sectionBackground);
+    border-radius: 45px;
+    margin-top: 3.5rem;
+}
+
+.Transactions_title {
+    background: var(--Basics_titleBackground);
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    color: var(--font-baseColor);
+    gap: 1rem;
+
+    & svg {
+        margin: 0;
+        margin-left: 2rem;
+        
+    }
+
+    & h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+
+    }
+}
+
+.Security {
+    height: clamp(32rem, 33.1rem, 34rem);
+    width: 92vw;
+    background: var(--FAQ-sectionBackground);
+    border-radius: 45px;
+    margin-top: 3.5rem;
+}
+
+.Security_title {
+    background: var(--Basics_titleBackground);
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    color: var(--font-baseColor);
+    gap: 1rem;
+
+    & svg {
+        margin: 0;
+        margin-left: 2rem;
+        
+    }
+
+    & h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+
+    }
+}
+
+.Usage {
+    height: clamp(32rem, 33.1rem, 34rem);
+    width: 92vw;
+    background: var(--FAQ-sectionBackground);
+    border-radius: 45px;
+    margin-top: 3.5rem;
+}
+
+.Usage_title {
+    background: var(--Basics_titleBackground);
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    color: var(--font-baseColor);
+    gap: 1rem;
+
+    & svg {
+        margin: 0;
+        margin-left: 2rem;
+        
+    }
+
+    & h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+
+    }
+}
+
+.Investment {
+    height: clamp(32rem, 33.1rem, 34rem);
+    width: 92vw;
+    background: var(--FAQ-sectionBackground);
+    border-radius: 45px;
+    margin-top: 3.5rem;
+}
+
+.Investment_title {
+    background: var(--Basics_titleBackground);
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    color: var(--font-baseColor);
+    gap: 1rem;
+
+    & svg {
+        margin: 0;
+        margin-left: 2rem;
+        
+    }
+
+    & h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+
+    }
+}
+
+.Support {
+    background: var(--Support-background);
+    width: 92vw;
+    height: clamp(16rem, 17.5rem, 18rem);
+    border-radius: 45px;
+    margin-top: 4rem;
+    color: var(--font-baseColor);
+    padding-top: 2.3rem;
+
+    & h3 {
+        font-weight: 700;
+        font-size: clamp(1.5rem, 2.2rem, 3rem);
+        width: 100%;
+        text-align: center;
+    }
+
+    & p {
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1.2rem, 2rem);
+        width: 100%;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
+}
+
+.Trusted_SourcesCards {
+    width: 95vw;
 }

@@ -1,0 +1,23 @@
+.SupportButtons_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+}
+
+.Button_container {
+    width: clamp(10rem, 11.3rem, 12rem);
+    height: clamp(3rem, 4.1rem, 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 24px;
+    border-width: 1px;
+    margin-top: 4rem;
+
+    & a {
+        text-decoration: none;        
+
+    }
+}

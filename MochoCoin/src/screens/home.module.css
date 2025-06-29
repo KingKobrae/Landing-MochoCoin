@@ -10,6 +10,7 @@
     background: var(--background-img);
     background-size: cover;
     background-position: center;
+    background-size: 100vw;
 }
 
 .firstSection {
