@@ -24,7 +24,12 @@ function AboutUs() {
           <div className={classes.context}>
 
             <img src="./src/assets/Funds.svg" alt="" />
-            <h2>La Solución Financiera que Venezuela Necesita. <img src="./src/assets/Paper-money-two.svg" alt="" /></h2>
+
+            <div className={classes.context_title}>
+
+              <h2>La Solución Financiera que Venezuela</h2>
+              <h2 className={classes.SpacingH2}>Necesita. <img src="./src/assets/Paper-money-two.svg" alt="" /></h2>
+            </div>
 
           </div>
 

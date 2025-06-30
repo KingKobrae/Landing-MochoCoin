@@ -51,7 +51,7 @@ function Navbar() {
                     <a href="#Blog" onClick={(e)=> handleScroll(e, "Blog")}>Blog</a>
                 </li>
                 <li>
-                    <a href="#" onClick={(e)=> handleScroll(e, "Completar")}>Contacto</a>
+                    <a href="#Contact" onClick={(e)=> handleScroll(e, "Contact")}>Contacto</a>
                 </li>
             </ul>
 

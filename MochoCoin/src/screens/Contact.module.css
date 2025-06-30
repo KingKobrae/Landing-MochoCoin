@@ -1,0 +1,9 @@
+:root {
+    --Contact-background: linear-gradient(106.86deg, #0C1931 16.15%, #254D97 50.14%, #0C1931 85.26%);
+}
+
+
+.Contact_container {
+    height: 1766px;
+    background: var(--Contact-background);
+}

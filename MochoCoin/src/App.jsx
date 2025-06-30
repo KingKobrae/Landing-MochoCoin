@@ -5,6 +5,8 @@ import AboutUs from './screens/AboutUs'
 import HowWork from './screens/HowWork'
 import Market from './screens/Market'
 import FAQ from './screens/FAQ'
+import Blog from './screens/Blog'
+import Contact from './screens/Contact'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <HowWork />
       <Market />
       <FAQ />
+      <Blog />
+      <Contact />
       
 
       
