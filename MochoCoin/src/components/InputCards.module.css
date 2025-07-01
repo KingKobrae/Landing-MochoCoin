@@ -1,0 +1,33 @@
+:root {
+    --InputCard-background: #3C55779E;
+    --InputCard-textColor: #B1A4A4D4;
+}
+
+.InputCard_container {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.Card_container {
+
+    & span {
+        display: block;
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1rem, 1.5rem);
+        color: var(--font-baseColor);
+        padding-left: 0.3rem;
+    }
+
+    & input {
+        width: clamp(17rem, 18.5rem, 19rem);
+        height: clamp(3rem, 4.2rem, 5.2rem);
+        border-radius: 25px;
+        background: var(--InputCard-background);
+        border-style: none;
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1.2rem, 2rem);
+        text-align: center;
+        color: var(--InputCard-textColor);
+        margin-top: 0.8rem;
+    }
+}

@@ -1,0 +1,46 @@
+
+.LinksCards_container {
+    width: 90%;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.Card_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    width: clamp(17rem, 18.7rem, 19rem);
+    margin-left: 1rem;
+
+    & div {
+        margin-left: 0;
+    }
+
+    & svg {
+        margin: 0;
+        background: var(--InputCard-background);
+        border-radius: 9px;
+    }
+
+    & h3 {
+        color: var(--font-baseColor);
+        font-weight: 700;
+        font-size: clamp(0.5rem, 1rem, 1.5rem);
+    }
+
+    & a {
+        color: var(--Calendar-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: clamp(0.5rem, 0.8rem, 1.2rem);
+    }
+
+    & p {
+        color: var(--font-baseColor);
+        font-weight: 200;
+        font-size: clamp(0.5rem, 0.7rem, 1rem);
+    }
+}

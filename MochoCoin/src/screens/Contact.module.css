@@ -1,9 +1,191 @@
 :root {
     --Contact-background: linear-gradient(106.86deg, #0C1931 16.15%, #254D97 50.14%, #0C1931 85.26%);
+    --Emergency-background: #FFE2E2;
+    --Emergency-title: #860000;
+    --Emergency-text: #990000;
+    --Emergency-border: #7D0000 1px solid;
+    --Emergency-linkText: #590707;
 }
 
 
 .Contact_container {
     height: 1766px;
     background: var(--Contact-background);
+    padding-top: 2.5rem;
+
+    & h2 {
+        font-weight: 700;
+        color: var(--font-baseColor);
+        width: 90%;
+        text-align: center;
+        font-size: clamp(3rem, 4rem, 5rem);
+    }
+
+
+}
+
+.Contact_container > p {
+    font-weight: 300;
+    font-size: clamp(1rem, 2rem, 3rem);
+    color: var(--font-baseColor);
+    width: 90%;
+    text-align: center;
+    line-height: clamp(2rem, 2.5rem, 3rem);
+    margin-top: 2rem;
+}
+
+.Contact_info {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    width: 96vw;
+    margin-top: 4rem;
+}
+
+.inputMessage {
+    width: clamp(48rem, 49.7rem, 50rem);
+    height: clamp(51rem, 52.3rem, 54rem);
+    background: var(--FAQ-sectionBackground);
+    border-radius: 25px;
+    padding-top: 1.5rem;
+
+    & h3 {
+        color: var(--font-baseColor);
+        font-weight: 700;
+        font-size: clamp(1rem, 2rem, 3rem);
+        width: 92%;
+    }
+}
+
+.Message {
+    width: 90%;
+    margin-top: 2.3rem;
+
+    & span {
+        display: block;
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1rem, 1.5rem);
+        color: var(--font-baseColor);
+        padding-left: 0.3rem;
+    }
+
+    & textarea {
+        width: clamp(39rem, 40rem, 41rem);
+        height: clamp(13rem, 14.2rem, 15.2rem);
+        border-radius: 25px;
+        background: var(--InputCard-background);
+        border-style: none;
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1.2rem, 2rem);
+        color: var(--InputCard-textColor);
+        margin-top: 0.8rem;
+        font-family: 'inter';
+        padding-top: 1rem;
+        padding-left: 1.3rem;
+        resize: none;
+        
+
+        
+    }
+
+}
+
+.BtnSend {
+    background: var(--Levels-numberColor);
+    display: block;
+    width: 90%;
+    height: clamp(3rem, 4.7rem, 5.7rem);
+    border-style: none;
+    border-radius: 25px;
+    color: var(--font-baseColor);
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.2rem, 3.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    & svg {
+        margin: 0;
+    }
+}
+
+.Links_emergency {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.Contact_links {
+    height: clamp(31rem, 32.5rem, 33rem);
+    width: clamp(29rem, 30rem, 31rem);
+    background: var(--FAQ-sectionBackground);
+    border-radius: 25px;
+    padding-top: 3rem;
+    padding-left: 1rem;
+}
+
+.Contact_links > h3 {
+    font-weight: 900;
+    font-size: clamp(0.5rem, 1.2rem, 2rem);
+    color: var(--font-baseColor);
+    margin-left: 2rem;
+}
+
+.Emergency_contact {
+    width: clamp(32rem, 33.8rem, 34rem);
+    height: clamp(13rem, 14.7rem, 15rem);
+    background: var(--Emergency-background);
+    border-radius: 45px;
+    padding-top: 1.5rem;
+
+    & h3 {
+        width: 100%;
+        text-align: center;
+        color: var(--Emergency-title);
+        font-weight: 600;
+        font-size: clamp(1rem, 2rem, 3rem);
+
+    }
+
+    & p {
+        color: var(--Emergency-text);
+        font-weight: 300;
+        font-size: clamp(0.5rem, 1.2rem, 2rem);
+        width: 80%;
+        text-align: center;
+        margin-top: 0.6rem;
+    }
+
+    & a {
+        text-decoration: none;
+        background: var(--font-baseColor);
+        border: var(--Emergency-border);
+        border-radius: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: clamp(18rem, 19.2rem, 20rem);
+        height: clamp(2rem, 3.8rem, 4.5rem);
+        margin-top: 1.5rem;
+        color: var(--Emergency-linkText);
+        font-weight: 300;
+        font-size: clamp(1rem, 2rem, 3rem);
+    }
+}
+
+.offices {
+    width: 96vw;
+    margin-top: 6rem;
+
+}
+
+.offices > h3 {
+    text-align: center;
+    color: var(--font-baseColor);
+    font-weight: 700;
+    font-size: clamp(3rem, 4rem, 5rem);
 }
